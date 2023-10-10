@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+    <div class="div-center">
+      <input type="text" id="datetime-picker" />
+      <button type="button" id="start">Start</button>
+    </div>
+    <br />
+    <div class="div-center">
+      <span class="label data-label">Days</span>
+      <span id="days" class="label time">00</span>
+      <span class="label data-label">Hours</span>
+      <span id="hours" class="label time">00</span>
+      <span class="label data-label">Minutes</span>
+      <span id="minutes" class="label time">00</span>
+      <span class="label data-label">Seconds</span>
+      <span id="seconds" class="label time">00</span>
+    </div>
+    <script src="js/02-timer.js" type="module"></script>
+  </body>
+  <br />
+  <div class="alert" id="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"
+      >&times;</span
+    >
+    Please choose a date in the future
+  </div>
+</html>
